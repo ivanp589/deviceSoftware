@@ -1,0 +1,19 @@
+i have been developing this code in unbuntu as i could not figure out how to link
+the jpeg library in devc++ or any other platform
+
+i have the jpeg library installed on my unbuntu virtual machine
+the compilation code is the following:
+gcc -g -o lineIso lineIso.c -ljpeg
+
+note: the -g allows for gdb debugging, and the -ljpeg linkes the jpeg library
+
+run the code with the following:
+./lineIso
+
+function of the code:
+the code uses a threshold of 50 to isolate the red line from all other colors
+any pixel which does not match this treshold is set to black removing all unneccessary pixels
+the input image may be of any size but must be in jpeg format named "input.jpg"
+the output image is named "output.jpg"
+
+chatgpt was used in the making of this code.
